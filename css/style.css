@@ -1,0 +1,322 @@
+.pokemon {
+  /*background-color: rgba(0,0,0,0.1);*/
+  border-radius: 12px;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+
+
+/* DEMO 3 */
+
+.demo-3 body:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-radial-gradient(center center, circle cover, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+  background: radial-gradient(center center, circle cover, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+}
+
+.demo-3 .bokeh {
+  font-size: 100px;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  margin: 100px auto;
+  border-radius: 50%;
+  border: .01em solid rgba(150, 150, 150, 0.1);
+  list-style: none;
+}
+
+.demo-3 .bokeh li {
+  position: absolute;
+  width: .2em;
+  height: .2em;
+  border-radius: 50%;
+}
+
+.demo-3 .bokeh li:nth-child(1) {
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -.1em;
+  background: #00C176;
+  -webkit-transform-origin: 50% 250%;
+  transform-origin: 50% 250%;
+  -webkit-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate;
+  animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate;
+}
+
+.demo-3 .bokeh li:nth-child(2) {
+  top: 50%;
+  right: 0;
+  margin: -.1em 0 0 0;
+  background: #FF003C;
+  -webkit-transform-origin: -150% 50%;
+  transform-origin: -150% 50%;
+  -webkit-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate;
+  animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate;
+}
+
+.demo-3 .bokeh li:nth-child(3) {
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -.1em;
+  background: #FABE28;
+  -webkit-transform-origin: 50% -150%;
+  transform-origin: 50% -150%;
+  -webkit-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate;
+  animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate;
+}
+
+.demo-3 .bokeh li:nth-child(4) {
+  top: 50%;
+  left: 0;
+  margin: -.1em 0 0 0;
+  background: #88C100;
+  -webkit-transform-origin: 250% 50%;
+  transform-origin: 250% 50%;
+  -webkit-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate;
+  animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes rota {
+  from {}
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rota {
+  from {}
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes opa {
+  0% {}
+  12.0% {
+    opacity: 0.80;
+  }
+  19.5% {
+    opacity: 0.88;
+  }
+  37.2% {
+    opacity: 0.64;
+  }
+  40.5% {
+    opacity: 0.52;
+  }
+  52.7% {
+    opacity: 0.69;
+  }
+  60.2% {
+    opacity: 0.60;
+  }
+  66.6% {
+    opacity: 0.52;
+  }
+  70.0% {
+    opacity: 0.63;
+  }
+  79.9% {
+    opacity: 0.60;
+  }
+  84.2% {
+    opacity: 0.75;
+  }
+  91.0% {
+    opacity: 0.87;
+  }
+}
+
+@keyframes opa {
+  0% {}
+  12.0% {
+    opacity: 0.80;
+  }
+  19.5% {
+    opacity: 0.88;
+  }
+  37.2% {
+    opacity: 0.64;
+  }
+  40.5% {
+    opacity: 0.52;
+  }
+  52.7% {
+    opacity: 0.69;
+  }
+  60.2% {
+    opacity: 0.60;
+  }
+  66.6% {
+    opacity: 0.52;
+  }
+  70.0% {
+    opacity: 0.63;
+  }
+  79.9% {
+    opacity: 0.60;
+  }
+  84.2% {
+    opacity: 0.75;
+  }
+  91.0% {
+    opacity: 0.87;
+  }
+}
+
+
+/* feulyourcreativity.com/how-to-create-a-fixed-navigation-bar-for-your-website/ */
+
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #333;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* Adds shadow to the bottom of the bar */
+  box-shadow: 0px 0px 8px 0px #000000;
+  /* Adds the transparent background */
+  background-color: rgba(1, 1, 1, 0.4);
+  z-index: 5;
+}
+
+#navigation a {
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  color: #5d3241;
+}
+
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-content {
+  background: url("http://i.imgur.com/YDdyWCn.gif?1") !important;
+  height: 541px;
+  width: 745px;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.media-body {
+  font-size: 10px;
+  position: absolute;
+  right: 58px;
+  top: 85px;
+  height: 113px;
+  width: 240px;
+  padding: 3px 0px 0px 15px;
+}
+
+.media-left {
+  position: absolute;
+  height: 175px;
+  width: 261px;
+  top: 72px;
+  left: 53px;
+}
+
+.media-object {
+  margin: auto;
+  position: relative;
+  width: 125px;
+}
+
+.modal-header {
+  border: 0px;
+}
+
+.modal-title {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 261px;
+  text-transform: capitalize;
+  height: 30px;
+  font-size: 100%;
+}
+
+body {
+  background: url("http://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+}
+
+.row {
+  background-color: #f2f2f2;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-bottom: 0px;
+  height: 200px;
+}
+
+table.dataTable {
+  text-transform: capitalize;
+}
+
+.close {
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("Pokemon_GB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url("http://www.pikachoose.com/wp-content/themes/pikachoose/_/images/stripe.png");
+  /*background: linear-gradient(#000, #151515);*/
+}
+
+canvas {
+  display: block;
+}
+
+#pichu {
+  height: 160px;
+  width: 140px;
+  position: absolute;
+  z-index: 3;
+  background: url("../images/sprite.png");
+  left: -110px;
+  top: 110px;
+}
+
+#left {
+  float: left;
+  width: 50%;
+}
+
+#right {
+  float: right;
+  width: 50%
+}

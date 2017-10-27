@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/u/dt/dt-1.10.12/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/quiz.css" />
+  <script src="js/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+  <div id="navigation">
+ 	<a href="http://people.ucsc.edu/~ialtawee/art101/">Ibrahim</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/index.html">Bereket</a>
+    <a href="http://people.ucsc.edu/~damfishe/art101/index.html">Danielle</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/finalproject/index.html">Homepage</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/finalproject/pokedex.html">Pokédex</a>
+  </div>
+
+  <div class="container">
+        <h1 class="display-3 yellow">Who's that Pokémon!</h1>
+    <!-- Who's that Pokemon Game -->
+    <div id="pokecontain">
+      <div id="pokemon">
+      <div id="pichu"></div>
+      	<!-- image -->
+        <img src="" id="sprite">
+        <!-- radio buttons -->
+        <div id="choices">
+          <div id="left"></div>
+          <div id="right"></div>
+        </div>
+        <!-- Answer and Next button -->
+        <div id="buttonrow">
+          <button id="myAnswer">My Answer!</button><button id="next">&#8594;</button></div>
+      </div>
+      <div id="buttoncol">
+      <button id="gen1" onclick="difficulty(gen1)">GenI</button>
+      <button id="gen2" onclick="difficulty(gen2)">GenII</button>
+      <button id="gen3" onclick="difficulty(gen3)">GenIII</button>
+      <button id="gen4" onclick="difficulty(gen4)">GenIV</button>
+      <button id="gen5" onclick="difficulty(gen5)">GenV</button>
+      <button id="gen6" onclick="difficulty(gen6)">GenVI</button>
+      </div>
+      <!-- Score -->
+        <div id="scorekeeper">Score:
+          <div id="score"></div>
+        </div>
+    </div>
+    </div>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Tether for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/u/dt/dt-1.10.12/datatables.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

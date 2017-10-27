@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/u/dt/dt-1.10.12/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div id="navigation">
+    <a href="http://people.ucsc.edu/~ialtawee/art101/">Ibrahim</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/index.html">Bereket</a>
+    <a href="http://people.ucsc.edu/~damfishe/art101/index.html">Danielle</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/finalproject/index.html">Homepage</a>
+    <a href="http://people.ucsc.edu/~bhaile/art101/finalproject/quiz.html">Who's That Pokémon!</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Header -->
+        <div class="jumbotron jumbotron-fluid blue">
+          <div class="container">
+            <h1 class="display-3 yellow">Pokédex</h1>
+            <p class="lead">We caught <span id='count'></span> Pokémons here. Click on a Pokémon's name to find more information about it!</p>
+          </div>
+        </div>
+        <!-- picture on the side of header -->
+        <hr>
+        <div id="pichu"></div>
+        <!-- Beginning of list -->
+        <table id="output">
+          <thead>
+            <th>List of Pokémon</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <hr>
+      </div>
+    </div>
+    <!-- loading symbol -->
+    <div class="demo-3" id='loading'>
+      <section class="main">
+        <!-- the component -->
+        <ul class="bokeh">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </div>
+    <!-- pokedex popup -->
+    <div id='myModal' class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="media pokemon">
+              <div class="media-left" href="#">
+                <img class="media-object" src="" alt="Generic placeholder image" id="sprite">
+                <h4 class="modal-title" id="name">Modal title</h4>
+              </div>
+              <div class="media-body">
+                Height: <span id='height'></span><br> Weight: <span id='weight'></span><br> Type: <span id='type'></span><br> Base Experience: <span id="base_experience"></span><br> Abilities:
+                <ul id='abilities'>
+                </ul>
+              </div><!-- media-body -->
+            </div><!-- media pokemon -->
+          </div><!-- modal-body -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Tether for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/u/dt/dt-1.10.12/datatables.min.js"></script>
+    <script src="pokedex.js"></script>
+</body>
+
+</html>
